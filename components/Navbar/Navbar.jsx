@@ -20,34 +20,34 @@ const MenuItems =({ isMobile, active, setActive, setIsOpen }) => {
 
     return(
         <ul className={`list-none flexCenter flex-row ${isMobile ? 'flex-col h-full' : ''}`}>
-        {['Home','About', 'Services', 'Gallery', 'Contact'].map((item, i) => (
-            <li
-              key={i}
-              onClick={() => {
-                setActive(item);
-                
-                if (isMobile) setIsOpen(false);
-              }}
-              className={`flex flex-row items-center font-poppins font-semibold textBase dark:hover:text-white hover:text-nft-dark mx-3
-                ${active === item
-                ? 'dark:text-white text-nft-black-1'
-                : 'dark:text-nft-gray-3 text-nft-gray-2'
-                }
-              `}
-            >
-              <Link href={generateLink(i)}>
-                {item}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {['Home', 'About', 'Services', 'Gallery', 'Contact'].map((item, i) => (
+          <li
+            key={i}
+            onClick={() => {
+              setActive(item);
+  
+              if (isMobile) setIsOpen(false);
+            }}
+            className={`flex flex-row items-center font-poppins font-semibold textBase dark:hover:text-white hover:text-nft-dark mx-3
+              ${active === item
+              ? 'dark:text-white text-nft-black-1'
+              : 'dark:text-nft-gray-3 text-nft-gray-2'
+              }
+            `}
+          >
+            <Link href={generateLink(i)}>
+              {item}
+            </Link>
+          </li>
+        ))}
+      </ul>
     )
 }
 
 const ButtonGroup = ({ setActive, router, setIsOpen }) => {
     return (
       <Button
-        btnName="Book"
+        btnName="Book An Appointment"
         classStyles="mx-2 rounded-xl"
         handleClick={() => {
           setActive('');
@@ -92,7 +92,7 @@ useEffect(() => {
 
   useEffect(() => {
     checkActive(active, setActive, router);
-  }, [router.pathname, router, active]);
+  }, [router.pathname]);
 
 
 
@@ -171,7 +171,7 @@ useEffect(() => {
           />
         )}
       {isOpen && (
-        <div className="fixed inset-0 top-65 dark:bg-nft-dark bg-white z-10 nav-h flex justify-between flex-col">
+        <div className="fixed inset-0 top-65 dark:bg-nft bg-white z-10 nav-h flex justify-between flex-col">
           <div className="flex-1 p-4">
             <MenuItems active={active} setActive={setActive} isMobile setIsOpen={setIsOpen} />
           </div>
