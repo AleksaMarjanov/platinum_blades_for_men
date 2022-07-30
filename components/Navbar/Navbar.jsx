@@ -51,8 +51,7 @@ const ButtonGroup = ({ setActive, router, setIsOpen }) => {
         classStyles="mx-2 rounded-xl"
         handleClick={() => {
           setActive('');
-          setIsOpen(false);
-          router.push('/');
+          router.push('http://platinumbladesformen.booksy.com/');
         }}
       />
     ) 
