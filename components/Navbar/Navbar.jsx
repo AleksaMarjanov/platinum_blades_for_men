@@ -91,7 +91,7 @@ useEffect(() => {
 
   useEffect(() => {
     checkActive(active, setActive, router);
-  }, [router.pathname]);
+  }, [router.pathname, router, active]);
 
 
 
@@ -170,7 +170,7 @@ useEffect(() => {
           />
         )}
       {isOpen && (
-        <div className="fixed inset-0 top-65 dark:bg-nft bg-white z-10 nav-h flex justify-between flex-col">
+        <div className="fixed inset-0 top-65 dark:bg-nft-black-2 bg-white z-10 nav-h flex justify-between flex-col">
           <div className="flex-1 p-4">
             <MenuItems active={active} setActive={setActive} isMobile setIsOpen={setIsOpen} />
           </div>
