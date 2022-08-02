@@ -1,11 +1,29 @@
-const Banner = ({ name, childStyles, parentStyle }) => (
-    <div className={`relative w-full flex items-center z-0 overflow-hidden nft-gradient ${parentStyle}`}>
-      <p className={`font-bold text-5xl dark:text-white text-dark font-poppins leading-70 ${childStyles}`}>{name}</p>
-      <div className="absolute w-48 h-48 sm:w-32 sm:h-32 rounded-full -top-9 -left-16 -z-5 white-bg" />
-      <div className="absolute w-72 h-72 sm:w-56 sm:h-56 rounded-full -bottom-24 -right-14 -z-5 white-bg" />
-      <div className="absolute w-36 h-36 sm:w-24 sm:h-24 rounded-full white-bg -bottom-12 -left-10 -z-5" />
+import Image from "next/image";
+import { useRouter } from "next/router";
+import images from '../../assets'
+import Button from "../Button/Button";
+import { useTheme } from 'next-themes';
+
+
+
+const Banner = ({ name, childStyles, parentStyle }) => {
+  const router = useRouter()
+  const { theme } = useTheme();
+  
+  return(
+    <>
+    <div className={`relative w-full flex items-center overflow-hidden ${parentStyle}`}> 
+      <p className={`font-bold z-10 text-5xl text-white font-poppins leading-70 absolute  ${childStyles}`}>{name}</p>
+      <Image className={`relative  ${theme === 'light' ? 'opacity-100' : 'opacity-60'}`} src={images.barbertools} objectFit="contain" alt="barber tools hero"/>
+      <Button  btnName="Book" classStyles="absolute bottom-10  md:bottom-3 lg:bottom-3 rounded-full items-center justify-center cursor-pointer " handleClick={() => router.push('http://platinumbladesformen.booksy.com/')} />
     </div>
-  );
+   
+    </>
+  )
+
+}
+ 
+
   
   export default Banner;
   
