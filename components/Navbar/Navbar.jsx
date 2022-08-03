@@ -10,17 +10,18 @@ const MenuItems =({ isMobile, active, setActive, setIsOpen }) => {
     const generateLink = (i) => {
         switch(i) {
             case 0: return '/';
-            case 1: return '/About';
-            case 2: return '/Services';
-            case 3: return '/Gallery';
-            case 4: return '/Contact';
+            case 1: return '/Testimonials';
+            case 2: return '/About';
+            case 3: return '/Services';
+            case 4: return '/Gallery';
+            case 5: return '/Contact';
             default: return '/';
         }
     };
 
     return(
         <ul className={`list-none flexCenter flex-row ${isMobile ? 'flex-col h-full' : ''}`}>
-        {['Home', 'About', 'Services', 'Gallery', 'Contact'].map((item, i) => (
+        {['Home', 'Testimonials','About', 'Services', 'Gallery', 'Contact'].map((item, i) => (
           <li
             key={i}
             onClick={() => {
@@ -51,6 +52,7 @@ const ButtonGroup = ({ setActive, router, setIsOpen }) => {
         classStyles="mx-2 rounded-xl"
         handleClick={() => {
           setActive('');
+          setIsOpen(false);
           router.push('http://platinumbladesformen.booksy.com/');
         }}
       />
