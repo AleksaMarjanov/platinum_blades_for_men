@@ -1,5 +1,7 @@
 import React from 'react'
-import { Banner, Button } from '../components'
+import { Banner} from '../components'
+import Testimonials from './../components/Testimonials/Testimonials';
+import About from './../components/About/About';
 
 const Home = () => {
   return (
@@ -14,7 +16,8 @@ const Home = () => {
           parentStyle="justify-center mb-6 h-72 sm:h-60 p-12 xs:p-4 xs:h-44 rounded-3xl font-poppins"
           
         />
-      
+      <Testimonials />
+      <About />
     </div>
     </div>
   )
