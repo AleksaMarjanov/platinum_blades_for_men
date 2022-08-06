@@ -29,16 +29,18 @@ const Testimonials = () => {
     <div className="flex flex-1 items-center w-full flex-col">
       {testimonials.length && (
         <>
-        <div className={`w-[60%] min-h-[320px] mt-16 flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
-          <Image src={`${urlFor(test.imgurl)}`} 
+        <div className={`w-[60%] min-h-[320px] mt-16 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
+          {test.imgurl && (
+          <Image src={`${urlFor(test?.imgurl)}`} 
           layout="fixed"
-          width={80}
-          height={80}
+          width={100}
+          height={100}
           className="rounded-full"
           objectFit="cover"
           alt="testimonial" />
+          )}
           <div className="flex flex-col pjustify-center flex-start flex-1 p-8 h-full">
-            <p className='text-md lg:text-xl'>{test.feedback}</p>
+            <p className='text-xl lg:text-2xl'>{test.feedback}</p>
             <div>
               <h4 className="font-bold mt-5">{test.name}</h4>
             </div>
