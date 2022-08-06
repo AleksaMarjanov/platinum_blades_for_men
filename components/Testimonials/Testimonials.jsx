@@ -26,26 +26,26 @@ const Testimonials = () => {
   const test = testimonials[currentIndex];
   
   return (
-    <div className="flex items-center w-full flex-col">
+    <div className="flex flex-1 items-center w-full flex-col">
       {testimonials.length && (
         <>
-        <div className={`w-[60%] min-h-[320px] mt-16  flex flex-col p-5 rounded-2xl --tw-shadow-color: #fff ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
+        <div className={`w-[60%] min-h-[320px] mt-16 flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
           <Image src={`${urlFor(test.imgurl)}`} 
           layout="fixed"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           className="rounded-full"
           objectFit="cover"
           alt="testimonial" />
-          <div className="flex flex-col justify-center flex-start flex-1 h-full">
-            <p className='text-xl lg:text-2xl'>{test.feedback}</p>
+          <div className="flex flex-col pjustify-center flex-start flex-1 p-8 h-full">
+            <p className='text-md lg:text-xl'>{test.feedback}</p>
             <div>
-              <h4 className="font-bold">{test.name}</h4>
+              <h4 className="font-bold mt-5">{test.name}</h4>
             </div>
           </div>
         </div>
 
-        <div className="">
+        <div className="flex flex-row mt-3 rounded-full m-5">
           <div 
           className=""
           onClick={() => 
@@ -55,7 +55,7 @@ const Testimonials = () => {
             : currentIndex - 1
           )}
           >
-            <HiChevronLeft />
+            <HiChevronLeft className="w-[20px] h-[20px] bg-slate-500 rounded-full mr-3 hover:bg-slate-400 cursor-pointer"/>
           </div>
           <div
           className=""
@@ -66,7 +66,7 @@ const Testimonials = () => {
             : currentIndex + 1 
           )}
           >
-            <HiChevronRight  />
+            <HiChevronRight  className="w-[20px] h-[20px] bg-slate-500 rounded-full ml-3 hover:bg-slate-400 cursor-pointer"/>
           </div>
         </div>
         </>
