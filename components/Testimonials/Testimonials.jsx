@@ -4,8 +4,10 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
 import { client, urlFor } from '../../pages/client.js'
+import {AppWrap} from './../Wrapper/AppWrap';
+import {MotionWrap} from './../Wrapper/MotionWrap';
 
-const Testimonials = () => {
+const Testimonial = () => {
   const handleClick = ( index ) => {
     setCurrentIndex(index)
   }
@@ -26,7 +28,7 @@ const Testimonials = () => {
   const test = testimonials[currentIndex];
   
   return (
-    <div className="flex flex-1 items-center w-full flex-col">
+    <div className="flex flex-1 items-center w-full flex-col dark:bg-nft-black-2 bg-slate-100">
       {testimonials.length && (
         <>
         <div className={`w-[60%] min-h-[320px] mt-16 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
@@ -57,7 +59,7 @@ const Testimonials = () => {
             : currentIndex - 1
           )}
           >
-            <HiChevronLeft className="w-[20px] h-[20px] bg-slate-500 rounded-full mr-3 hover:bg-slate-400 cursor-pointer"/>
+            <HiChevronLeft className="w-[40px] h-[40px] dark:bg-slate-500 bg-slate-300 rounded-full mr-3 hover:bg-slate-400  dark:hover:bg-slate-700 cursor-pointer"/>
           </div>
           <div
           className=""
@@ -68,7 +70,7 @@ const Testimonials = () => {
             : currentIndex + 1 
           )}
           >
-            <HiChevronRight  className="w-[20px] h-[20px] bg-slate-500 rounded-full ml-3 hover:bg-slate-400 cursor-pointer"/>
+            <HiChevronRight  className="w-[40px] h-[40px] dark:bg-slate-500 bg-slate-300 rounded-full ml-3 hover:bg-slate-400 dark:hover:bg-slate-700 cursor-pointer"/>
           </div>
         </div>
         </>
@@ -77,4 +79,9 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+
+export default AppWrap(
+  MotionWrap(Testimonial, "app__testimonial"),
+  "testimonial",
+  "app__primarybg"
+);

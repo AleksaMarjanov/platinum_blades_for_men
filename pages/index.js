@@ -8,7 +8,7 @@ import Contact from './../components/Contact/Contact';
 
 const Home = () => {
   return (
-    <div className="flex justify-center sm:px-4 p-12">
+    <div className="flex justify-center sm:px-4 p-0">
     <div className="w-full rounded-xl minmd:w-4">
          <Banner
       // Text you wish to edit >...
