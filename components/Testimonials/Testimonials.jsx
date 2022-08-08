@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
 import { client, urlFor } from '../../pages/client.js'
-import {AppWrap} from './../Wrapper/AppWrap';
-import {MotionWrap} from './../Wrapper/MotionWrap';
+import MotionWrap from '../Wrapper/MotionWrap.js';
+import AppWrap from '../Wrapper/AppWrap.js';
 
 const Testimonial = () => {
   const handleClick = ( index ) => {
@@ -80,8 +80,4 @@ const Testimonial = () => {
 }
 
 
-export default AppWrap(
-  MotionWrap(Testimonial, "app__testimonial"),
-  "testimonial",
-  "app__primarybg"
-);
+export default AppWrap(MotionWrap(Testimonial, "testimonials"))

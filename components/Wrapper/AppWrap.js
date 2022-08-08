@@ -1,5 +1,5 @@
 import React from "react";
-import {NavigationDots, SocialMedia} from './../NavigationDots';
+import {NavigationDots, SocialMedia} from '..';
 
 const AppWrap = (Component, idName, classNames) =>
   function HOC() {
