@@ -1,10 +1,6 @@
 import React from 'react'
-import { Banner} from '../components'
+import { About, Banner, Services, Gallery, Contact} from '../components'
 import Testimonials from './../components/Testimonials/Testimonials';
-import About from './../components/About/About';
-import Gallery from './../components/Gallery/Gallery';
-import Services from './../components/Services/Services';
-import Contact from './../components/Contact/Contact';
 
 const Home = () => {
   return (
@@ -20,10 +16,10 @@ const Home = () => {
           
         />
       <Testimonials />
-      <About />
-      <Gallery />
-      <Services />
-      <Contact />
+        <About />
+        <Services />
+        <Gallery />
+        <Contact />
     </div>
     </div>
   )

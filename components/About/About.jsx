@@ -1,10 +1,9 @@
 import React from 'react'
-import AppWrap from '../Wrapper/AppWrap.js'
 
 const About = () => {
   return (
-    <div className="flex justify-center m-16 font-poppins font-semibold items-center border-white">About</div>
+    <div id="about" className="font-poppins text-4xl flex justify-center items-center">About</div>
   )
 }
 
-export default AppWrap(About, "about")
+export default About

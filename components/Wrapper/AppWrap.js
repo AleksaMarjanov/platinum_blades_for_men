@@ -4,14 +4,14 @@ import {NavigationDots, SocialMedia} from '..';
 const AppWrap = (Component, idName, classNames) =>
   function HOC() {
     return (
-      <div id={idName} className={`app__container ${classNames}`}>
+      <div id={idName} className={`w-full min-h-screen flex flex-row${classNames}`}>
         <SocialMedia />
-        <div className="app__wrapper app__flex">
+        <div className="flex justify-center items-center flex-1 w-full flex-col p-16 p-4 ">
           <Component />
 
-          <div className="copyright">
-            <p className="p-text">@{new Date().getFullYear()} Aleksa</p>
-            <p className="p-text">All rights reserved</p>
+          <div className="w-full pt-8 pr-0 pb-0 flex flex-col justify-end items-end">
+            <p className="text-sm text-left line lg:text-xl">@{new Date().getFullYear()} Aleksa</p>
+            <p className="text-sm text-left line lg:text-xl">All rights reserved</p>
           </div>
         </div>
         <NavigationDots active={idName} />
@@ -20,3 +20,5 @@ const AppWrap = (Component, idName, classNames) =>
   };
 
 export default AppWrap;
+// flex-1 w-full flex-col pt-16 pr-8 marker:flex justify-center items-center -- above component 
+// w-full min-h-screen flex flex-row idName first div

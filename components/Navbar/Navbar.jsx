@@ -10,11 +10,11 @@ const MenuItems =({ isMobile, active, setActive, setIsOpen }) => {
     const generateLink = (i) => {
         switch(i) {
             case 0: return '/';
-            case 1: return '/Testimonials';
-            case 2: return '/About';
-            case 3: return '/Services';
-            case 4: return '/Gallery';
-            case 5: return '/Contact';
+            case 1: return '#testimonials';
+            case 2: return '#about';
+            case 3: return '#services';
+            case 4: return '#gallery';
+            case 5: return '#contact';
             default: return '/';
         }
     };
@@ -66,6 +66,12 @@ const ButtonGroup = ({ setActive, router, setIsOpen }) => {
       case '/':
         if (active !== 'Home') setActive('Home');
         break;
+      case '/testimonials':
+        if (active !== 'Testimonials') setActive('Testimonials');
+        break;
+      case '/about':
+        if (active !== 'About') setActive('About');
+        break;
       case '/services':
         if (active !== 'Services') setActive('Services');
         break;
@@ -93,7 +99,7 @@ useEffect(() => {
 
   useEffect(() => {
     checkActive(active, setActive, router);
-  }, [router.pathname, router, active]);
+  }, [router.pathname]);
 
 
 
