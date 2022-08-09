@@ -44,7 +44,7 @@ const Testimonial = () => {
           <div className="flex flex-col pjustify-center flex-start flex-1 p-8 h-full">
             <p className='text-xl lg:text-2xl'>{test.feedback}</p>
             <div>
-              <h4 className="font-bold mt-5">{test.name}</h4>
+              <h4 className="font-bold mt-5 uppercase">{test.name}</h4>
             </div>
           </div>
         </div>
