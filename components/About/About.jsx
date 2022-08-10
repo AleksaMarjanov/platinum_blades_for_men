@@ -3,11 +3,18 @@ import Image from "next/image";
 import images from "../../assets";
 import AppWrap from "./../Wrapper/AppWrap";
 import MotionWrap from "../Wrapper/MotionWrap";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <>
-      <div id="about" className="font-poppins  mt-0 text-4xl flex flex-col mb-5 xs:flex-col">
+    <motion.div
+     whileInView={{ x: [300, 0] }}
+            transition={{ duration: 0.85, ease: "easeOut" }}
+    >
+      <h1 className="mb-5 absolute -bottom-60 text-6xl flex justify-center items-center">ABOUT</h1>
+    </motion.div>
+      <div id="about" className="font-poppins mt-3 text-4xl flex flex-col mb-5 xs:flex-col">
         AT PLATINUM BLADES, WE
         <br /> BELIEVE THAT, AT ITS BEST,
         <br />
