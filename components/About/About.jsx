@@ -8,13 +8,15 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <>
+    {/* <div className="absolute -bottom-60 sm:-bottom-7 md:-bottom-80 lg:-bottom-50 marker:mt-5">
     <motion.div
-     whileInView={{ x: [300, 0] }}
+     whileInView={{ x: [-300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
     >
-      <h1 className="mb-5 absolute -bottom-60 text-6xl flex justify-center items-center">ABOUT</h1>
+      <span className="font-poppins mb-5 text-6xl sm:text-3xl items-center">ABOUT</span>
     </motion.div>
-      <div id="about" className="font-poppins mt-3 text-4xl flex flex-col mb-5 xs:flex-col">
+    </div> */}
+      <div id="about" className="font-poppins items-start text-4xl flex flex-col mb-5 xs:flex-col">
         AT PLATINUM BLADES, WE
         <br /> BELIEVE THAT, AT ITS BEST,
         <br />
@@ -31,7 +33,7 @@ const About = () => {
         </p>
         <p className="font-poppins font-thin text-sm mt-5">Lee has been cutting hair fewer than 10 years. <br />We’ve seen it all and can do it all. <br />We are about substance and skill, not gimmicks. <br />We like to have fun, but we take our work seriously.<br /> Scantily-clad female stylists who press their cleavage <br />in your face at the shampoo bowl?<br /> Sorry pal, you won¹t find that here.</p>
       </div>
-        <div>
+        <div className="flex flex-row sm:flex-col">
 
       <Image
         src={images.about1}

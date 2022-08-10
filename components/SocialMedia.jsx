@@ -6,7 +6,7 @@ const SocialMedia = () => {
   const { theme } = useTheme();
    
   return (
-    <div className="flex justify-end items-center flex-col p-4">
+    <div className="flex justify-center items-center flex-col p-4">
       <div className="w-[40px] h-[40px] rounded-full m-1 border-solid border-slate-400">
         <a href="https://twitter.com/beli1337" target="_blank" rel="noreferrer">
           <BsTwitter />

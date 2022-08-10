@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import images from '../../assets'
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import { useTheme } from 'next-themes';
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 
-const Banner = ({ name, childStyles, parentStyle, isMobile }) => {
+const Banner = ({ name, childStyles, parentStyle }) => {
   const router = useRouter()
   const { theme } = useTheme();
   
