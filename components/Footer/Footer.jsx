@@ -30,10 +30,10 @@ const Footer = () => {
       </p>
       <p className=" font-semibold font-poppins text-md pl-14">
         HOURS:<br />
-        Mon-Thurs 10AM-9PM<br/>
-        Fri 10AM-7PM<br />
-        Sat 8AM-6PM <br />
-        Sun 9AM-5PM<br />
+        Mon 3PM-7PM<br/>
+        Tue-Fri 10AM-7PM<br />
+        Sat 10AM-2PM<br />
+        Sun Closed<br />
 
       </p>
 </div>
