@@ -22,7 +22,7 @@ const Footer = () => {
       className="rounded-full"
       alt="logo"
       />
-      <p className="pb-10 font-poppins font-semibold text-sm">
+      <p className="pb-8 font-poppins font-semibold text-sm">
         2112 4th Ave W<br />
         Suite 103 B<br />
         Williston 58801<br />
