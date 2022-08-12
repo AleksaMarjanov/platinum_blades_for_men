@@ -94,11 +94,11 @@ const router = useRouter();
 
 useEffect(() => {
     setTheme('dark');
-  }, []);
+  }, [setTheme]);
 
   useEffect(() => {
     checkActive(active, setActive, router);
-  }, [router.pathname]);
+  }, [router.pathname, active, router]);
 
 
 
