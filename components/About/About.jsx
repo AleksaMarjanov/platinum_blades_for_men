@@ -13,7 +13,7 @@ const About = () => {
      whileInView={{ x: [-300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
     >
-      <span className="font-poppins mb-5 text-6xl sm:text-3xl items-center">ABOUT</span>
+      <span className="font-poppins mb-5 text-5xl sm:text-2xl items-center">ABOUT</span>
     </motion.div>
     </div> 
       <div id="about" className="font-poppins items-start text-4xl flex flex-col mb-5 xs:flex-col">

@@ -124,7 +124,7 @@ useEffect(() => {
             setIsOpen(false);
           }}
         >
-          <Image src={images.logo} objectFit="contain" width={32} height={32} alt="logo" />
+          <Image src={images.logo} objectFit="contain" width={32} height={32} alt="logo" className='rounded-full'/>
           <p className="dark:text-white text-nft-black-1 font-semibold text-lg ml-1">Platinum Blades</p>
         </div>
       </Link>
