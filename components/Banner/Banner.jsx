@@ -13,7 +13,7 @@ const Banner = ({ name, childStyles, parentStyle }) => {
   
   return(
     <>
-    <div className={`relative  z-0 w-full flex items-center overflow-hidden ${parentStyle}`}> 
+    <div className={`relative z-[0] w-full flex justify-center items-center overflow-hidden ${parentStyle}`}> 
       <p className={`font-bold text-5xl dark:text-white text-white font-poppins leading-70 absolute w-full flex justify-center items-center z-10 ${childStyles}`}>{name}</p>
       <Image className={`relative  ${theme === 'light' ? 'opacity-100' : 'opacity-70'}`} src={images.barbertools} objectFit="contain" alt="barber tools hero"/>
       <Link href='http://platinumbladesformen.booksy.com/'>

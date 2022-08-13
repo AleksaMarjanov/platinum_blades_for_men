@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import { motion } from 'framer-motion';
 
 import { client, urlFor } from '../../pages/client.js'
 import MotionWrap from '../Wrapper/MotionWrap.js';
@@ -34,7 +35,7 @@ const Testimonial = () => {
         <div className={`w-[55%] min-h-[320px] mt-16 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
           {test.imgurl && (
           <Image src={`${urlFor(test?.imgurl)}`} 
-          layout="fixed"
+          // layout="fixed"
           width={100}
           height={100}
           className="rounded-full"

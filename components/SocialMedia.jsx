@@ -7,7 +7,7 @@ const SocialMedia = () => {
   const { theme } = useTheme();
    
   return (
-    <div className={`flex justify-end items-end flex-row ${theme === 'light' ? 'filter invert' : ''}`}>
+    <div className={`flex justify-end items-end flex-row ${theme === 'light' ? 'filter invert' : ''} sm:hidden`}>
      <motion.button
       className="box text-white w-[40px] h-[40px] rounded-full m-1 border-solid border-slate-400"
       whileHover={{ scale: 1.1 }}
