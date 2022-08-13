@@ -7,15 +7,15 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center flex-row sm:flex-col">
-    <div className="absolute -bottom-60 sm:-bottom-7 md:-bottom-80 lg:-bottom-50 marker:mt-5">
+    <div className="flex w-full justify-center items-center flex-row sm:flex-col">
+    {/* <div className="absolute -bottom-60 sm:-bottom-7 md:-bottom-80 lg:-bottom-50 marker:mt-5">
     <motion.div
      whileInView={{ x: [-300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
     >
       <span className="font-poppins mb-5 text-5xl sm:text-2xl items-center">ABOUT</span>
     </motion.div>
-    </div> 
+    </div>  */}
       <div id="about" className="font-poppins items-start text-4xl flex flex-col mb-5 xs:flex-col">
         AT PLATINUM BLADES, WE
         <br /> BELIEVE THAT, AT ITS BEST,

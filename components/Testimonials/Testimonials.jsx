@@ -28,7 +28,7 @@ const Testimonial = () => {
   const test = testimonials[currentIndex];
   
   return (
-    <div id="testimonials" className="flex flex-1 mb-5 justify-center items-center w-full flex-col ">
+    <div id="testimonials" className="flex flex-1 mb-5 justify-center items-center w-full flex-col">
       {testimonials.length && (
         <>
         <div className={`w-[55%] min-h-[320px] mt-16 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
