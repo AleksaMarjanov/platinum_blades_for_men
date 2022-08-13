@@ -10,7 +10,7 @@ const About = () => {
     <div className="flex w-full justify-center items-center flex-row sm:flex-col md:p-4">
       <div
         id="about"
-        className="font-poppins text-4xl flex flex-col mb-36 xs:flex-col"
+        className="font-poppins text-4xl flex flex-col mb-36 sm:mb-5 xs:flex-col"
       >
         <motion.div
           whileInView={{ x: [-300, 0] }}
@@ -47,12 +47,15 @@ const About = () => {
           <br /> Sorry pal, you won¹t find that here.
         </p>
       </div>
-      <div className="flex sm:flex-col justify-end items-end">
+      <div className="flex sm:flex-col sm:mt-0 justify-end items-end">
         <Image
           src={images.about1}
           alt="hairstyles"
-          width={400}
+          width={200}
           height={600}
+          // ** Perfect for sm size (mobile)
+          // width={200}
+          // height={880} 
           objectFit="contain"
         />
       </div>

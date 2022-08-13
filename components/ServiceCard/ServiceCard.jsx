@@ -19,20 +19,20 @@ const ServiceCard = () => {
       
       
       return (
-        <div id="services" className='flex flex-1 mb-5 space-x-8 justify-center items-center w-full flex-row'>
+        <div id="services" className='flex flex-1 w-full flex-row mb-5 space-x-8 space-y-2 p-8 ml-3 sm:flex-col sm:space-y-4 justify-center items-center'>
             {services.map((service, index) => (
-                <div className={`w-[40%] max-h-[560px] shadow-xl flex flex-col p-3 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
+                <div className={`w-[30%] sm:w-[55%] min-h-[340px] shadow-xl flex flex-col sm:p-2 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
                 key={service.name + index}
                 >
                 <Image src={`${urlFor(service.imgurl)}`} alt="haircut"
-                    height={500}
-                    width={500}
+                    height={400}
+                    width={400}
                     className="rounded-xl"
                     objectFit="cover"
                  />
             <div className="flex flex-col justify-center items-center">
-             <h4 className="font-bold mt-5">{service.name}</h4>
-            <p className='text-sm lg:text-xl'>{service.description}</p>
+             <h4 className="font-bold mt-5 sm:mt-2">{service.name}</h4>
+            <p className='text-md lg:text-xl p-2 '>{service.description}</p>
             <div>
             </div>
            </div>
