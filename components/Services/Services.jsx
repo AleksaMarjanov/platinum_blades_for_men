@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import AppWrap from './../Wrapper/AppWrap';
 import MotionWrap from '../Wrapper/MotionWrap'
 import ServiceCard from '../ServiceCard/ServiceCard';
@@ -8,8 +8,10 @@ const Services = () => {
   
 
   return (
-    <div id="services" className='flex mb-5 justify-center items-center flex-col'>
+    <div id="services" className='justify-center items-center sm:flex-col'>
         <ServiceCard />
+        <ServiceCard />
+
         <p>Beard Trimms + Line up $30</p>
         <p>Steaming hot shave + Line up $55</p>
         <p>Facial Shave $30</p>

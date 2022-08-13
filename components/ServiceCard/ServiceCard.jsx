@@ -6,7 +6,6 @@ import { urlFor, client } from '../../pages/client';
 
 const ServiceCard = () => {
     const [services, setServices] = useState([])
-    const [currentIndex, setCurrentIndex] = useState(0)
     const { theme } = useTheme();
   
     useEffect(() => {
@@ -17,32 +16,32 @@ const ServiceCard = () => {
           setServices(data);
         })
       })
-    
-      const desc = services[currentIndex]
-    
-    return (
-    <div>
-      {services.length && (
-        <div className={`w-[20%] min-h-[160px] shadow-xl flex flex-col p-3 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
-        >
-        {desc.imgurl && (
-          <Image src={`${urlFor(desc.imgurl)}`} alt="haircut"
-          height={200}
-          width={200}
-          className="rounded-xl"
-          objectFit="cover"
-        />
-        )}
-        <div className="flex flex-col justify-center items-center">
-              <h4 className="font-bold mt-5">{desc.name}</h4>
-            <p className='text-sm lg:text-xl'>{desc.description}</p>
+      
+      
+      return (
+        <div id="services" className='flex flex-1 mb-5 space-x-8 justify-center items-center w-full flex-row'>
+            {services.map((service, index) => (
+                <div className={`w-[40%] max-h-[560px] shadow-xl flex flex-col p-3 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
+                key={service.name + index}
+                >
+                <Image src={`${urlFor(service.imgurl)}`} alt="haircut"
+                    height={500}
+                    width={500}
+                    className="rounded-xl"
+                    objectFit="cover"
+                 />
+            <div className="flex flex-col justify-center items-center">
+             <h4 className="font-bold mt-5">{service.name}</h4>
+            <p className='text-sm lg:text-xl'>{service.description}</p>
             <div>
             </div>
-          </div>
-        </div>
-      )}
-    </div>
-  )
-}
-
-export default ServiceCard
+           </div>
+                </div>
+            ))}
+         </div>
+        // </div>
+        )
+    }
+    
+    export default ServiceCard
+    
