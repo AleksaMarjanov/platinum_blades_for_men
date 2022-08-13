@@ -1,13 +1,15 @@
-import React from 'react'
-import Image from 'next/image';
-import images from '../../assets';
+import React, {useState, useEffect} from 'react'
 import AppWrap from './../Wrapper/AppWrap';
 import MotionWrap from '../Wrapper/MotionWrap'
+import ServiceCard from '../ServiceCard/ServiceCard';
+
 
 const Services = () => {
+  
+
   return (
-    <div className='flex flex-col justify-start items-start font-poppins font-bold text-4xl'>
-        <p>Hair Cut $40</p>
+    <div id="services" className='flex mb-5 justify-center items-center flex-col'>
+        <ServiceCard />
         <p>Beard Trimms + Line up $30</p>
         <p>Steaming hot shave + Line up $55</p>
         <p>Facial Shave $30</p>
