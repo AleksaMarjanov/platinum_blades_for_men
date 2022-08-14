@@ -18,7 +18,7 @@ const Services = () => {
                 SERVICES{" "}
             </motion.div>
                 </div>
-        <ServiceCard />
+        <ServiceCard/>
         <ServiceCard />
 
         <p>Beard Trimms + Line up $30</p>

@@ -15,7 +15,7 @@ const About = () => {
         <motion.div
           whileInView={{ x: [-300, 0] }}
           transition={{ duration: 0.85, ease: "easeOut" }}
-          className="mb-16 flex justify-end items-end text-6xl sm:text-5xl sm:justify-center sm:items-center"
+          className="mb-16 flex justify-center items-cemter ml-36 sm:ml-0 text-6xl sm:text-5xl sm:justify-center sm:items-center"
         >
           ABOUT{" "}
         </motion.div>
