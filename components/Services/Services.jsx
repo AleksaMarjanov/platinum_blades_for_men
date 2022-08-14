@@ -17,7 +17,7 @@ const Services = () => {
                 className="mb-16 flex justify-center items-center text-6xl sm:text-5xl sm:justify-center sm:items-center">
                 SERVICES{" "}
             </motion.div>
-                </div>
+            </div>
         <ServiceCard/>
         <ServiceCard />
 
