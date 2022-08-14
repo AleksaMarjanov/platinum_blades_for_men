@@ -14,6 +14,10 @@ const Gallery = () => {
     setCurrentIndex(index)
   }
 
+  const zoomInOnClick = () => {
+
+  }
+
   const [gallery, setGallery] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const { theme } = useTheme()
@@ -30,7 +34,7 @@ const Gallery = () => {
   const desc = gallery[currentIndex]
 
   return (
-    <div id="gallery" className='flex flex-col items-center justify-center'>
+    <div id="gallery" className='flex flex-col items-center justify-center' onClick={() => {}}>
                    <div>
             <motion.div
             whileInView={{ x: [-300, 0] }}
@@ -40,7 +44,7 @@ const Gallery = () => {
             </motion.div>
             </div>
           {gallery.length &&  (
-                <div className={`w-[15] sm:w-[55%] min-h-[320px] shadow-xl flex flex-col rounded-xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
+                <div className={`w-[15] min-h-[320px] shadow-xl flex flex-col rounded-xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
                 >
                 <Image src={`${urlFor(desc.imgUrl)}`} alt="haircut"
                     height={500}

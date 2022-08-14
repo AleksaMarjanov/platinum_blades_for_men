@@ -115,6 +115,8 @@ useEffect(() => {
           <p className="dark:text-white text-nft-black-1 font-semibold text-lg ml-1">Platinum Blades</p>
         </div>
       </Link>
+      <div>
+      </div>
       <Link href="/">
         <div
           className="hidden md:flex"
@@ -128,7 +130,6 @@ useEffect(() => {
         </div>
       </Link>
     </div>
-
     <div className="flex flex-initial flex-row justify-end">
       <div className="flex items-center mr-2">
         <input

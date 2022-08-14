@@ -39,7 +39,7 @@ const Footer = () => {
 </div>
           <div className="flex flexBetween">
           <p className="font-poppins">{new Date().getFullYear()}  @Aleksa All Rights Reserved</p>
-            <SocialMedia />
+            {/* <SocialMedia /> */}
           </div>
       </div>
   );
