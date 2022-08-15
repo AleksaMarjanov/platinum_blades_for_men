@@ -45,7 +45,7 @@ const MenuItems =({ isMobile, active, setActive, setIsOpen }) => {
     )
 }
 
-const ButtonGroup = ({ setActive, router, setIsOpen }) => {
+const ButtonGroup = ({ setActive, router }) => {
     return (
       <Button
         btnName="Book An Appointment"
@@ -98,7 +98,7 @@ useEffect(() => {
 
   useEffect(() => {
     checkActive(active, setActive, router);
-  }, [router.pathname, active, router]);
+  }, [router.pathname]);
 
 
 

@@ -31,4 +31,4 @@ const Services = () => {
   )
 }
 
-export default AppWrap(MotionWrap(Services, "services"))
+export default AppWrap(MotionWrap(Services, 'services'))

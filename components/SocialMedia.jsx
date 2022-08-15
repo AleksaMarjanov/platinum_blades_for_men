@@ -7,13 +7,13 @@ const SocialMedia = () => {
   const { theme } = useTheme();
    
   return (
-    <div className={`flex justify-end items-end flex-row ${theme === 'light' ? 'filter invert' : ''} sm:hidden`}>
+    <div className={`flex justify-end items-center flex-col p-4 ${theme === 'light' ? 'filter invert' : ''} sm:hidden`}>
      <motion.button
       className="box text-white w-[40px] h-[40px] rounded-full m-1 border-solid border-slate-400"
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >
-        <a href="https://twitter.com/beli1337" target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com/platinum_blades_for_men/" target="_blank" rel="noreferrer">
           <BsInstagram />
         </a>
     </motion.button>
@@ -22,7 +22,7 @@ const SocialMedia = () => {
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >
-        <a href="https://twitter.com/beli1337" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com/Platinum-Blades-For-Men-116197351079939/" target="_blank" rel="noreferrer">
           <BsFacebook/>
         </a>
     </motion.button>

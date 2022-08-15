@@ -7,9 +7,8 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="flex w-full justify-center items-center flex-row sm:flex-col md:p-4">
+    <div id="about" className="flex w-full justify-center items-center flex-row sm:flex-col md:p-4">
       <div
-        id="about"
         className="font-poppins text-4xl flex flex-col mb-36 sm:mb-5 xs:flex-col"
       >
         <motion.div
