@@ -9,7 +9,7 @@ const SocialMedia = () => {
   return (
     <div className={`flex justify-end items-center flex-col p-4 ${theme === 'light' ? 'filter invert' : ''} sm:hidden`}>
      <motion.button
-      className="box text-white w-[40px] h-[40px] rounded-full m-1 border-solid border-slate-400"
+      className={`box text-white w-[40px] h-[40px] m-1 rounded-full ${theme === 'dark' ? 'bg-nft-black-3' : 'bg-nft-black-1'}  border-solid border-nft-black-1 flex justify-center items-center ease-in-out`}
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >
@@ -18,7 +18,7 @@ const SocialMedia = () => {
         </a>
     </motion.button>
      <motion.button
-      className="box text-white w-[40px] h-[40px] rounded-full m-1 border-solid border-slate-400"
+      className={`box text-white w-[40px] m-1 h-[40px] rounded-full ${theme === 'dark' ? 'bg-nft-black-3' : 'bg-nft-black-1'}  border-solid border-nft-black-1 flex justify-center items-center ease-in-out`}
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >
