@@ -46,7 +46,10 @@ const About = () => {
           <br /> Sorry pal, you won¹t find that here.
         </p>
       </div>
-      <div className="flex sm:flex-col sm:mt-0 justify-end items-end">
+      <div 
+      // whileInView={{ x: [300, 0] }}
+      // transition={{ duration: 1, ease: "easeOut" }}
+      className="flex sm:flex-col sm:mt-0 justify-end items-end">
         <Image
           src={images.about1}
           alt="hairstyles"
