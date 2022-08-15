@@ -20,7 +20,7 @@ const ServiceCard = () => {
       
       return (
         // <div className=' flex-1 space-x-8 space-y-1 p-4 sm:flex-col sm:space-y-4 justify-center items-center'>
-          <div className='flex flex-row w-full sm:flex-col mb-5 justify-center items-center p-4 sm:space-y-4' >
+          <div className='flex flex-row w-full sm:flex-col mb-5 justify-center items-center p-4 sm:space-y-4 sm:space-x-0 lg:space-x-8' >
             {services.map((service, index) => (
                 <div className={`w-[25%] sm:w-[55%] md:w-[40%] min-h-[320px] shadow-xl flex flex-col rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
                 key={service.name + index}
