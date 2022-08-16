@@ -11,28 +11,40 @@ const ServiceCard = ({ isMobile }) => {
     useEffect(() => {
         const query = '*[_type == "services" ]';
     
-        client.fetch(query)
+        client.fetch(query) 
         .then((data) => {
           setServices(data);
         })
       }, [])
       
     return(
-      <div className='grid grid-rows-3 grid-flow-col gap-8  w-full justify-center items-center'>
-        {services.map((service,index) => (
-          <div key={service.name + index}>
-            <Image 
-            src={`${urlFor(service.imgurl)}`} alt="services"
-            width={400}
-            height={400}
-            objectFit="cover"
-            className='rounded-xl'
-            />
+          <div className='flex justify-center items-center text-gray-600'>
+              <div className='container px-5 py-24 mx-auto'>
+                    <div className="flex flex-wrap -m-4">
+                        <div className='w-full p-4 gap-8 grid grid-flow-col grid-rows-3'>
+                                {services.map((service,index) => (
+                                  <div key={service.name + index} className="flex flex-col items-center justify-center rounded-lg ">
+                                  <Image 
+                                  src={`${urlFor(service.imgurl)}`}  
+                                  alt='services' 
+                                  objectFit='cover'  
+                                  width={400}
+                                  height={400}
+                                  loading="lazy"
+                                  className='object-center object-cover'
+                                  />
+                                  <div className='w-[41.5%] sm:w-full p-6 hover:bg-nft-black-2 hover:text-white transition duration-300 ease-in'>
+                                    <h1 className='text-2xl font-semibold mb-3'>{service.name}</h1>
+                                    <p className='leading-relaxed mb-3'>{service.description}</p>
+                                  </div>
+                                  </div>
+                                ))}  
+                        </div>
+                    </div>
+              </div>
           </div>
-        )) }
-      </div>
-    )
-        }
+    )}
+    
     export default ServiceCard
 
 
