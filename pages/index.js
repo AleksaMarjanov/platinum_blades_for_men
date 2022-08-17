@@ -1,5 +1,6 @@
 import React from 'react'
 import { About, Banner, Services, Gallery, Contact} from '../components'
+import ServiceCard from '../components/ServiceCard/ServiceCard';
 import Testimonials from './../components/Testimonials/Testimonials';
 
 const Home = () => {
