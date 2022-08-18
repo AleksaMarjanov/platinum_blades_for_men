@@ -5,7 +5,11 @@ import AppWrap from './../Wrapper/AppWrap';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <h2 className='flex justify-center items-center font-poppins text-4xl'>
+        Gift cards available for purchase in store purchase
+      </h2>
+    </div>
   )
 }
 

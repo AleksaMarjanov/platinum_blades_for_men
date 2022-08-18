@@ -11,7 +11,11 @@ function MyApp({ Component, pageProps }) {
     <div>
       <Navbar className='dark:bg-black bg-white min-h-screen'/>
         <div className="pt-65">
-        <SEO title="Platinum Blades For Men" description="Get the best haircut in Williston" />
+        <SEO 
+        title="Platinum Blades For Men" 
+        description="Get the best haircut in Williston" 
+        keywords={['best barber in williston', 'barber', 'platinum blades', 'haircut', 'haircut in Williston']}
+        />
           <Component {...pageProps} />
         </div>
       <Footer />
