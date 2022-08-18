@@ -30,7 +30,7 @@ const ServiceCard = ({ isMobile }) => {
                 key={service.name + index}
                 className={`flex flex-col ${
                   theme === "dark" ? "bg-nft-black-2" : "bg-nft-gray-2"
-                } items-center justify-center rounded-lg sm:justify-between md:justify-between`}
+                } items-center justify-between rounded-lg`}
               >
                 <Image
                   src={`${urlFor(service.imgurl)}`}
@@ -42,7 +42,7 @@ const ServiceCard = ({ isMobile }) => {
                   className="object-center object-cover flex items-center justify-center"
                 />
                 <div
-                  className={`xl:w-[50%] flex flex-col items-center justify-center p-6 text-white hover:text-nft-red-violet  transition duration-300 ease-in`}
+                  className={`xl:w-[65%] w-[70%] flex flex-col items-center justify-center p-6 text-white hover:text-nft-red-violet  transition duration-300 ease-in`}
                 >
                   <h1 className="text-2xl font-semibold mb-3">
                     {service.name}
@@ -53,6 +53,7 @@ const ServiceCard = ({ isMobile }) => {
                     </p>
                   {/* </div> */}
                 </div>
+                <div className="mb-5" >
                 <Link href='http://platinumbladesformen.booksy.com/'>
                 <motion.button
                   className="box bottom-3 xs:m-2 sm:pt-2 sm:mb-5 rounded-full md:bottom-3 lg:bottom-3 nft-gradient text-sm minlg:text-lg py-2 px-6 minlg:px-8 font-poppins font-semibold text-white "
@@ -64,6 +65,7 @@ const ServiceCard = ({ isMobile }) => {
                 
                 </motion.button>
                 </Link>
+                </div>
               </div>
             ))}
           </div>
