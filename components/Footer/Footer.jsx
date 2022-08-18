@@ -6,15 +6,7 @@ import images from "../../assets";
 const Footer = () => {
   return (
     <div className="p-5 -right-14 border-t-2  dark:bg-nft-dark bg-white  dark:border-nft-black-1 border-nft-gray-1">
-      {/* <div className=" pb-0 flex flex-col justify-center items-center">
-        <p className="text-xs text-left line lg:text-sm">
-          @{new Date().getFullYear()} Aleksa
-        </p>
-        <p className="text-xs text-left line lg:text-sm mb-5">
-          All rights reserved
-        </p>
-      </div> */}
-<div className="flex flex-row space-x-2 items-center justify-center"> 
+<div className="flex flex-row space-x-2 items-center justify-center md:text-2xl"> 
 <Image 
       src={images.logo}
       width={160}
@@ -28,7 +20,7 @@ const Footer = () => {
         Williston 58801<br />
         (701) 895-8333<br/>
       </p>
-      <p className=" font-semibold font-poppins text-md sm:text-sm pl-14">
+      <p className=" font-semibold font-poppins text-md sm:text-xl pl-14">
         HOURS:<br />
         Mon 3PM-7PM<br/>
         Tue-Fri 10AM-7PM<br />
@@ -39,7 +31,6 @@ const Footer = () => {
 </div>
           <div className="flex flexBetween">
           <p className="font-poppins">{new Date().getFullYear()}  @Aleksa All Rights Reserved</p>
-            {/* <SocialMedia /> */}
           </div>
       </div>
   );
