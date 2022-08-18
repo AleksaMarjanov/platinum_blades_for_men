@@ -33,9 +33,11 @@ const ServiceCard = ({ isMobile }) => {
                                   loading="lazy"
                                   className='object-center object-cover'
                                   />
-                                  <div className='w-[41.5%] sm:w-full p-6 hover:bg-nft-black-2 hover:text-white transition duration-300 ease-in'>
+                                  <div className={`flex flex-col items-center justify-center p-6 ${theme === 'dark' ? 'hover:text-white' : 'hover:text-nft-red-violet'}  transition duration-300 ease-in`}>
                                     <h1 className='text-2xl font-semibold mb-3'>{service.name}</h1>
-                                    <p className='leading-relaxed mb-3'>{service.description}</p>
+                                      <div className='w-[70%]'>
+                                        <p className='leading-relaxed mb-3'>{service.description}</p>
+                                      </div>
                                   </div>
                                   </div>
                                 ))}  
