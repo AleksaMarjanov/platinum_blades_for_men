@@ -30,12 +30,18 @@ const Testimonial = () => {
   
   return (
     <div id="testimonials" className="flex pt-32 flex-1 mb-5 justify-center items-center w-full flex-col">
+      <motion.div
+          whileInView={{ x: [-300, 0] }}
+          transition={{ duration: 0.85, ease: "easeOut" }}
+          className="mb-16 font-poppins flex justify-center items-center text-6xl sm:text-5xl sm:justify-center sm:items-center"
+        >
+          What people say about us{" "}
+        </motion.div>
       {testimonials.length && (
         <>
         <div className={`w-[55%] min-h-[320px] mt-16 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
           {test.imgurl && (
           <Image src={`${urlFor(test?.imgurl)}`} 
-          // layout="fixed"
           width={100}
           height={100}
           className="rounded-full"
