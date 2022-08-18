@@ -1,7 +1,5 @@
 import React from 'react'
-import { About, Banner, Services, Gallery, Contact} from '../components'
-import ServiceCard from '../components/ServiceCard/ServiceCard';
-import Testimonials from './../components/Testimonials/Testimonials';
+import { About, Banner, Services, Gallery, Contact, Testimonials} from '../components'
 
 const Home = () => {
   return (

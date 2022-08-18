@@ -21,8 +21,6 @@ const Services = () => {
             </div>
         <ServiceCard/>
 
-        <p>Facial Shave $30</p>
-        <p>Hot towel shave + Line up $45</p>
     </div>
 
   )

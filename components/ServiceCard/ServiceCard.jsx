@@ -54,7 +54,7 @@ const ServiceCard = ({ isMobile }) => {
                   {/* </div> */}
                 </div>
                 <div className="mb-5" >
-                <Link href='http://platinumbladesformen.booksy.com/'>
+                <Link href='http://platinumbladesformen.booksy.com/' target="_blank">
                 <motion.button
                   className="box bottom-3 xs:m-2 sm:pt-2 sm:mb-5 rounded-full md:bottom-3 lg:bottom-3 nft-gradient text-sm minlg:text-lg py-2 px-6 minlg:px-8 font-poppins font-semibold text-white "
                   whileHover={{ scale: 1.1 }}
