@@ -24,7 +24,9 @@ const ServiceCard = ({ isMobile }) => {
     <div className="flex justify-center items-center text-gray-600">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
-          <div className="p-16 gap-8 sm:p-8 sm:gap-4 sm:ml-32 grid grid-flow-col grid-rows-3">
+        {/* Ovde je problem sto se tice responsive ------ */}
+          <div className="p-16 gap-8 sm:p-8 sm:gap-4 grid grid-flow-col grid-rows-3 sm:flex sm:flex-col sm:items-center sm:justify-center">
+            {/* Iznad margin */}
             {services.map((service, index) => (
               <div
                 key={service.name + index}
@@ -47,11 +49,9 @@ const ServiceCard = ({ isMobile }) => {
                   <h1 className="text-2xl font-semibold mb-3">
                     {service.name}
                   </h1>
-                  {/* <div className="w-[70%]"> */}
                     <p className="leading-relaxed mb-3 md:text-2xl">
                       {service.description}
                     </p>
-                  {/* </div> */}
                 </div>
                 <div className="mb-5" >
                 <Link href='http://platinumbladesformen.booksy.com/' target="_blank">

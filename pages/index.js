@@ -16,7 +16,8 @@ const Home = () => {
         />
         <Testimonials />
         <About />
-        <Services />
+        {/* Services causes issue  */}
+        <Services />  
         <Gallery />
         <Contact />
     </div>
