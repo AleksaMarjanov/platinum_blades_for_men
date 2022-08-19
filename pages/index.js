@@ -3,7 +3,7 @@ import { About, Banner, Services, Gallery, Contact, Testimonials} from '../compo
 
 const Home = () => {
   return (
-    <div className="flex justify-center sm:px-4 p-0">
+    <div className="flex  sm:px-4">
     <div className="w-full rounded-xl minmd:w-4">
          <Banner
       // Text you wish to edit >...

@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       <h2 className='flex justify-center items-center font-poppins text-4xl'>
-        Gift cards available for purchase in store purchase
+        Gift cards available for in store purchase
       </h2>
     </div>
   )

@@ -24,14 +24,14 @@ const ServiceCard = ({ isMobile }) => {
     <div className="flex justify-center items-center text-gray-600">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
-          <div className="p-16  gap-8 xl:gap-16 grid grid-flow-col grid-rows-3">
+          <div className="p-16 gap-8 sm:p-8 sm:gap-4 sm:ml-32 grid grid-flow-col grid-rows-3">
             {services.map((service, index) => (
               <div
                 key={service.name + index}
                 className={`flex flex-col ${
                   theme === "dark" ? "bg-nft-black-2" : "bg-nft-gray-2"
                 } items-center justify-between rounded-lg`}
-              >
+              > 
                 <Image
                   src={`${urlFor(service.imgurl)}`}
                   alt="services"
@@ -42,7 +42,7 @@ const ServiceCard = ({ isMobile }) => {
                   className="object-center object-cover flex items-center justify-center"
                 />
                 <div
-                  className={`xl:w-[65%] w-[70%] flex flex-col items-center justify-center p-6 text-white hover:text-nft-red-violet  transition duration-300 ease-in`}
+                  className={`xl:w-[55%] w-[60%] sm:w-[80%] flex flex-col items-center justify-center p-6 text-white hover:text-nft-red-violet  transition duration-300 ease-in`}
                 >
                   <h1 className="text-2xl font-semibold mb-3">
                     {service.name}
@@ -59,7 +59,7 @@ const ServiceCard = ({ isMobile }) => {
                   className="box bottom-3 xs:m-2 sm:pt-2 sm:mb-5 rounded-full md:bottom-3 lg:bottom-3 nft-gradient text-sm minlg:text-lg py-2 px-6 minlg:px-8 font-poppins font-semibold text-white "
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  handleClick={() => router.push('http://platinumbladesformen.booksy.com/')}
+                 
                 >
                 Schedule an appointment
                 
