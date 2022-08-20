@@ -14,7 +14,7 @@ const About = () => {
         <motion.div
           whileInView={{ x: [-300, 0] }}
           transition={{ duration: 0.85, ease: "easeOut" }}
-          className="mb-16 font-poppins flex justify-center items-center ml-36 sm:ml-0 text-6xl sm:text-5xl sm:justify-center sm:items-center"
+          className="mb-16 font-poppins flex justify-center items-center ml-36 sm:ml-0 text-6xl sm:text-4xl sm:mr-5"
         >
           ABOUT{" "}
         </motion.div>
@@ -49,7 +49,7 @@ const About = () => {
       <div 
       // whileInView={{ x: [300, 0] }}
       // transition={{ duration: 1, ease: "easeOut" }}
-      className="flex sm:flex-col sm:mt-0 justify-end items-end">
+      className="flex flex-col justify-end items-end">
         <Image
           src={images.about1}
           alt="hairstyles"
