@@ -1,5 +1,4 @@
 import React from "react";
-import SocialMedia from "../SocialMedia";
 import Image from "next/image";
 import images from "../../assets";
 
@@ -14,13 +13,13 @@ const Footer = () => {
       className="rounded-full"
       alt="logo"
       />
-      <p className="pb-8 font-poppins font-semibold text-sm">
+      <p className="pb-8 font-poppins font-semibold text-sm sm:text-xs">
         2112 4th Ave W<br />
         Suite 103 B<br />
         Williston 58801<br />
         (701) 895-8333<br/>
       </p>
-      <p className=" font-semibold font-poppins text-md sm:text-xl pl-14">
+      <p className=" font-semibold font-poppins text-md sm:text-xs pb-4">
         HOURS:<br />
         Mon 3PM-7PM<br/>
         Tue-Fri 10AM-7PM<br />
@@ -30,7 +29,7 @@ const Footer = () => {
       </p>
 </div>
           <div className="flex flexBetween">
-          <p className="font-poppins">{new Date().getFullYear()}  @Aleksa All Rights Reserved</p>
+          <p className="font-poppins xs:font-sm">{new Date().getFullYear()}  @Aleksa All Rights Reserved</p>
           </div>
       </div>
   );
