@@ -13,13 +13,13 @@ const Footer = () => {
       className="rounded-full"
       alt="logo"
       />
-      <p className="pb-8 font-poppins font-semibold text-sm sm:text-xs">
+      <p className="pb-8 font-poppins font-semibold text-xl sm:text-xs">
         2112 4th Ave W<br />
         Suite 103 B<br />
         Williston 58801<br />
         (701) 895-8333<br/>
       </p>
-      <p className=" font-semibold font-poppins text-md sm:text-xs pb-4">
+      <p className=" font-semibold font-poppins text-md  pl-14 text-2xl sm:text-xs pb-4 sm:pl-0">
         HOURS:<br />
         Mon 3PM-7PM<br/>
         Tue-Fri 10AM-7PM<br />
