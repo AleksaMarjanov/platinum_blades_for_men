@@ -62,7 +62,6 @@ const ServiceCard = ({ isMobile }) => {
                  
                 >
                 Schedule an appointment
-                
                 </motion.button>
                 </Link>
                 </div>

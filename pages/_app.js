@@ -1,4 +1,5 @@
 import Script from 'next/script'
+import { useState, useEffect } from 'react';
 import { ThemeProvider } from 'next-themes';
 
 import SEO from "@bradgarropy/next-seo"
@@ -6,6 +7,15 @@ import "../styles/globals.css";
 import { Navbar, Footer} from "../components";
 
 function MyApp({ Component, pageProps }) {
+  const [isSSR, setIsSSR] = useState(true);
+
+  useEffect(() => {
+    setIsSSR(false);
+  }, []);
+
+  if (isSSR) return null;
+
+
   return (
     <ThemeProvider attribute="class">
     <div>
