@@ -14,7 +14,7 @@ const Map = () => {
   return (
     <ReactMapGL
     mapStyle='mapbox://styles/aleksamarjanov/cl72iaroo001f14nusf0r0hwy'
-    mapboxAccessToken={process.env.REACT_APP_MAPBOX_KEY}
+    mapboxAccessToken={process.env.mapbox_key}
     {...viewport} 
     >
 

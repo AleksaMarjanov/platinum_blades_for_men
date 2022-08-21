@@ -9,7 +9,10 @@ const nextConfig = {
     domains: ['cdn.sanity.io'],
   },
   env: {
-    mapbox_key: ''
+    mapbox_key: process.env.REACT_APP_MAPBOX_KEY,
+    projectId: process.env.REACT_APP_SANITY_PROJECT_ID,
+    sanity_token: process.env.REACT_APP_SANITY_TOKEN,
+
   }
 }
 
