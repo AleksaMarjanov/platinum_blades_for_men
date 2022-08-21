@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-import { urlFor, client } from "../../pages/client";
+import { client, urlFor } from '../client'
 import {motion} from 'framer-motion'
 import { useRouter } from "next/router";
 import Link  from 'next/link';
@@ -10,7 +10,6 @@ import Link  from 'next/link';
 const ServiceCard = ({ isMobile }) => {
   const [services, setServices] = useState([]);
   const { theme } = useTheme();
-  const { router } = useRouter();
 
   useEffect(() => {
     const query = '*[_type == "services" ]';

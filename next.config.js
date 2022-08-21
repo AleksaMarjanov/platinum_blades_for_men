@@ -8,6 +8,9 @@ const nextConfig = {
   images: {
     domains: ['cdn.sanity.io'],
   },
+  env: {
+    mapbox_key: ''
+  }
 }
 
 module.exports = nextConfig

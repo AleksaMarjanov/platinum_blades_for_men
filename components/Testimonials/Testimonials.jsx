@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
 
-import { client, urlFor } from '../../pages/client.js'
+import { client, urlFor } from '../client'
 import MotionWrap from '../Wrapper/MotionWrap.js';
 import AppWrap from '../Wrapper/AppWrap.js';
 

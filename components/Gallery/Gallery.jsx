@@ -2,11 +2,12 @@ import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 import { HiChevronRight, HiChevronLeft } from 'react-icons/hi'
 
-import { urlFor, client } from '../../pages/client'
+
 import { useTheme } from 'next-themes'
 import { motion } from 'framer-motion'
 import AppWrap from './../Wrapper/AppWrap';
 import MotionWrap from '../Wrapper/MotionWrap'
+import { client, urlFor } from '../client'
 
 const Gallery = () => {
 
@@ -44,12 +45,12 @@ const Gallery = () => {
             </motion.div>
             </div>
           {gallery.length &&  (
-                <div className={`w-[15] min-h-[320px] shadow-xl flex flex-col rounded-xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
+                <div className={`w-full min-h-[320px] shadow-xl flex flex-col items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
                 >
                 <Image src={`${urlFor(desc.imgUrl)}`} alt="haircut"
                     height={500}
                     width={500}
-                    className=""
+                    className=" shadow-xl rounded-lg"
                     objectFit="cover"
                  />
                  </div>
