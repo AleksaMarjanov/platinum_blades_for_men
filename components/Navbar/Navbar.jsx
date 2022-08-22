@@ -60,35 +60,36 @@ const ButtonGroup = ({ setActive, router }) => {
 
 
 
-  const checkActive = (active, setActive, router) => {
-    switch (router.pathname) {
-      case '/':
-        if (active !== 'Home') setActive('Home');
-        break;
-      case '/testimonials':
-        if (active !== 'Testimonials') setActive('Testimonials');
-        break;
-      case '/about':
-        if (active !== 'About') setActive('About');
-        break;
-      case '/services':
-        if (active !== 'Services') setActive('Services');
-        break;
-      case '/gallery':
-        if (active !== 'Gallery') setActive('Gallery');
-        break;
-      case '/contact':
-        if (active !== 'Contact') setActive('Contact');
-        break;
-      default:
-        setActive('');
-    }
-  };
+  
+  
+  const Navbar = () => {
+    const {theme, setTheme} = useTheme()
+    const [isOpen, setIsOpen] = useState(false)
 
-
-const Navbar = () => {
-const {theme, setTheme} = useTheme()
-const [isOpen, setIsOpen] = useState(false)
+    const checkActive = (active, setActive, router) => {
+      switch (router.pathname) {
+        case '/':
+          if (active !== 'Home') setActive('Home');
+          break;
+        case '/testimonials':
+          if (active !== 'Testimonials') setActive('Testimonials');
+          break;
+        case '/about':
+          if (active !== 'About') setActive('About');
+          break;
+        case '/services':
+          if (active !== 'Services') setActive('Services');
+          break;
+        case '/gallery':
+          if (active !== 'Gallery') setActive('Gallery');
+          break;
+        case '/contact':
+          if (active !== 'Contact') setActive('Contact');
+          break;
+        default:
+          setActive('');
+      }
+    };
 const [active, setActive] = useState('')
 const router = useRouter();
 
@@ -98,8 +99,7 @@ useEffect(() => {
 
   useEffect(() => {
     checkActive(active, setActive, router);
-  }, []);
-//* Removed router.pathname from dependency array 
+  }, [router.pathname]);
 
 
   return (
