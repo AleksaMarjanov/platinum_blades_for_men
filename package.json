@@ -6,14 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.2.0",
     "@chakra-ui/react": "^2.2.8",
+    "@next/bundle-analyzer": "^12.2.5",
     "@sanity/client": "^3.3.0",
     "@sanity/image-url": "^1.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
     "framer-motion": "^7.2.0",
     "geolib": "^3.3.3",
