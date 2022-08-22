@@ -7,7 +7,7 @@ const SocialMedia = () => {
   const { theme } = useTheme();
    
   return (
-    <div className={`flex justify-end items-center flex-col p-4 ${theme === 'light' ? 'filter invert' : ''} sm:hidden`}>
+    <div className={`flex justify-end items-center flex-col p-4 ${theme === 'light' ? 'filter invert' : ''} sm:hidden md:p-1`}>
      <motion.button
       className={`box text-white w-[40px] h-[40px] m-1 rounded-full ${theme === 'dark' ? 'bg-nft-black-3' : 'bg-nft-black-1'}  border-solid border-nft-black-1 flex justify-center items-center ease-in-out`}
       whileHover={{ scale: 1.1 }}
