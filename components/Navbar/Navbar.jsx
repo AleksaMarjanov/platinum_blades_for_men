@@ -99,7 +99,7 @@ useEffect(() => {
   useEffect(() => {
     checkActive(active, setActive, router);
   }, []);
-
+//* Removed router.pathname from dependency array 
 
 
   return (
