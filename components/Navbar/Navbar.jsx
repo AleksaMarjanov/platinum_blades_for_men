@@ -98,7 +98,7 @@ useEffect(() => {
 
   useEffect(() => {
     checkActive(active, setActive, router);
-  }, [router.pathname]);
+  }, []);
 
 
 
