@@ -48,8 +48,8 @@ const Gallery = () => {
                 <div className={`w-full min-h-[320px] shadow-xl flex flex-col items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
                 >
                 <Image src={`${urlFor(desc.imgUrl)}`} alt="haircut"
-                    height={500}
-                    width={500}
+                    height={600}
+                    width={600}
                     className=" shadow-xl rounded-lg"
                     objectFit="cover"
                  />
