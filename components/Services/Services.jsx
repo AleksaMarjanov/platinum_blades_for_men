@@ -9,7 +9,7 @@ const Services = () => {
   
 
   return (
-    <div id="services" className='sm:mt-10 '>
+    <div id="services" className='sm:mt-10'>
            <div>
             <motion.div
             whileInView={{ x: [-300, 0] }}

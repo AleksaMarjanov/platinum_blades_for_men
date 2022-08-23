@@ -7,7 +7,7 @@ import {motion} from 'framer-motion'
 import { useRouter } from "next/router";
 import Link  from 'next/link';
 
-const ServiceCard = ({ isMobile }) => {
+const ServiceCard = () => {
   const [services, setServices] = useState([]);
   const { theme } = useTheme();
 
@@ -43,10 +43,10 @@ const ServiceCard = ({ isMobile }) => {
                 <div
                   className={`xl:w-[55%] w-[60%] sm:w-[80%] font-poppins font-bold flex flex-col items-center justify-center p-6 ${theme === 'dark' ? 'text-white' : 'text-black'} hover:text-nft-red-violet  transition duration-300 ease-in`}
                 >
-                  <h1 className="text-2xl font-semibold mb-3">
+                  <h1 className="text-2xl font-semibold mb-3 lg:text-md ">
                     {service.name}
                   </h1>
-                    <p className="leading-relaxed mb-3 md:text-2xl">
+                    <p className="leading-relaxed mb-3 lg:text-md">
                       {service.description}
                     </p>
                 </div>

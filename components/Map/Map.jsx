@@ -20,7 +20,8 @@ const Map = () => {
             mapboxAccessToken={process.env.mapbox_key}
             {...viewport}
             width="100%"
-            height="calc(100vh - 64px)"
+            // height="calc(100vh - 64px)"
+            height="100%"
             onViewPortChange={(nextViewPort) => setViewport(nextViewPort)}
           >
             <Marker
