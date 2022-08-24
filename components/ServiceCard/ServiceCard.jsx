@@ -23,7 +23,7 @@ const ServiceCard = () => {
     <div className="flex justify-center items-center text-gray-600">
       <div className="container px-5 py-12 sm:py-4 mx-auto">
         <div className="flex flex-wrap -m-4">
-          <div className="p-16 gap-8 sm:p-8 sm:gap-4 grid grid-flow-col grid-rows-2 sm:flex sm:flex-col sm:items-center sm:justify-center">
+          <div className="p-16 gap-8 sm:p-8 sm:gap-4 grid grid-flow-col grid-rows-4 sm:flex sm:flex-col sm:items-center sm:justify-center">
             {services.map((service, index) => (
               <div
                 key={service.name + index}
