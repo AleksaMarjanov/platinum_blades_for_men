@@ -21,7 +21,7 @@ const ServiceCard = () => {
 
   return (
     <div className="flex justify-center items-center text-gray-600">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-12 sm:py-4 mx-auto">
         <div className="flex flex-wrap -m-4">
           <div className="p-16 gap-8 sm:p-8 sm:gap-4 grid grid-flow-col grid-rows-3 sm:flex sm:flex-col sm:items-center sm:justify-center">
             {services.map((service, index) => (
@@ -53,7 +53,7 @@ const ServiceCard = () => {
                 <div className="mb-5" >
                 <Link href='http://platinumbladesformen.booksy.com/' target="_blank">
                 <motion.button
-                  className="box bottom-3 xs:m-2  font-poppins font-bold text-white sm:pt-2 sm:mb-5 rounded-full md:bottom-3 lg:bottom-3 nft-gradient text-sm minlg:text-lg py-2 px-6 minlg:px-8 "
+                  className="box bottom-3 xs:m-2  font-poppins font-bold text-white sm:text-xs sm:font-semibold sm:pt-2 sm:mb-5 rounded-full md:bottom-3 lg:bottom-3 nft-gradient text-sm minlg:text-lg py-2 px-6 minlg:px-8 "
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >

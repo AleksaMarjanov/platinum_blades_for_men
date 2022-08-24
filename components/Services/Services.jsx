@@ -9,18 +9,17 @@ const Services = () => {
   
 
   return (
-    <div id="services" className='sm:mt-10'>
+    <div id="services" className='mt-10'>
            <div>
             <motion.div
             whileInView={{ x: [-300, 0] }}
                 transition={{ duration: 0.85, ease: "easeOut" }}
-                className="mb-16 flex justify-center items-center text-6xl sm:text-5xl sm:justify-center sm:items-center"
+                className="font-poppins flex mb-16 md:mb-8 sm:mb-0 justify-center items-center text-6xl lg:text-3xl md:text-3xl sm:text-3xl"
                 >
                 SERVICES{" "}
             </motion.div>
             </div>
         <ServiceCard/>
-
     </div>
 
   )

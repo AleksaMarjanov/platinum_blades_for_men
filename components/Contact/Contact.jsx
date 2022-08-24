@@ -10,11 +10,11 @@ const Map = dynamic(() => import("../Map/Map"), {
 const Contact = () => {
   return (
     <>
-      <div id="contact" className="mt-24">
-        <h2 className="flex flex-col justify-center items-center font-poppins text-4xl">
+      <div id="contact" className="mt-24 sm:mb-16">
+        <h2 className="flex flex-col justify-center items-center font-poppins text-2xl sm:text-md mb-5">
           Gift cards available for in store purchase
         </h2>
-        <div id="map" className="hidden xl:inline-flex w-full min-h-screen mt-5">
+        <div id="map" className="">
           <Map />
         </div>
       </div>

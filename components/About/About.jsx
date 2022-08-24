@@ -7,36 +7,38 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div id="about" className="flex w-full justify-center items-center flex-row sm:flex-col md:p-4 sm:ml-8">
+    <div id="about" className="mt-10">
+         <motion.div
+            whileInView={{ x: [-300, 0] }}
+                transition={{ duration: 0.85, ease: "easeOut" }}
+                className="font-poppins flex mb-16 md:mb-8 sm:mb-0 justify-center items-center text-6xl lg:text-3xl md:text-3xl sm:text-3xl"
+                >
+                ABOUT{" "}
+            </motion.div>
+
+    <div className="flex justify-center items-center flex-row sm:flex-col md:flex-col mt-4">
       <div
-        className="font-poppins text-4xl flex flex-col mb-36 sm:mb-5 xs:flex-col"
+        className="font-poppins flex flex-col mb-36 lg:mb-24 md:mb-16 sm:mb-3 xs:flex-col"
       >
-        <motion.div
-          whileInView={{ x: [-300, 0] }}
-          transition={{ duration: 0.85, ease: "easeOut" }}
-          className="mb-16 font-poppins flex justify-center items-center ml-36 sm:ml-0 text-6xl sm:text-4xl sm:mr-5"
-        >
-          ABOUT{" "}
-        </motion.div>
-        AT PLATINUM BLADES, WE
+        <p className="text-4xl sm:text-2xl">AT PLATINUM BLADES, WE
         <br /> BELIEVE THAT, AT ITS BEST,
         <br />
         A BARBERSHOP IS A <br />
         DEPENDABLE, TRUSTED
         <br />
-        NEIGHBORHOOD INSTITUTION.
+        NEIGHBORHOOD INSTITUTION.</p>
         <hr className="mt-5 mb-5 " />
-        <p className="mb-5 font-poppins text-xl">
+        <p className="mb-5 font-poppins text-xl sm:text-lg">
           OUR PRIMARY GOAL IS TO BUILD
           <br /> STRONG,LONG-TERM RELATIONSHIPS
           <br /> WITH EACH OF OUR CLIENTS.
         </p>
-        <p className="font-poppins font-semibold text-sm">
+        <p className="font-poppins font-semibold text-md sm:text-sm">
           Platinum Blades is proud to be an independent,
           <br /> Williston local shop
           <br /> focused solely on serving the North Dakota market.
         </p>
-        <p className="font-poppins font-semibold text-sm mt-5">
+        <p className="font-poppins font-thin text-md sm:text-sm mt-5">
           Lee has been cutting hair fewer than 10 years. <br />
           We’ve seen it all and can do it all. <br />
           We are about substance and skill, not gimmicks. <br />
@@ -49,18 +51,19 @@ const About = () => {
       <div 
       // whileInView={{ x: [300, 0] }}
       // transition={{ duration: 1, ease: "easeOut" }}
-      className="flex flex-col justify-end items-end">
+      className="flex flex-col justify-end items-end xl:pl-3">
         <Image
           src={images.about1}
           alt="hairstyles"
           width={200}
-          height={600}
+          height={800}
           // ** Perfect for sm size (mobile)
           // width={200}
           // height={880} 
           objectFit="contain"
         />
       </div>
+    </div>
     </div>
   );
 };

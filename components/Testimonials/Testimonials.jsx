@@ -29,27 +29,27 @@ const Testimonial = () => {
   const test = testimonials[currentIndex];
   
   return (
-    <div id="testimonials" className="flex pt-32 flex-1 mb-5 justify-center items-center w-full flex-col">
+    <div id="testimonials" className="flex pt-32 sm:pt-8  mb-5 justify-center items-center w-full flex-col">
       <motion.div
           whileInView={{ x: [-300, 0] }}
           transition={{ duration: 0.85, ease: "easeOut" }}
-          className="mb-16 font-poppins flex justify-center items-center text-6xl sm:text-2xl sm:justify-center sm:items-center"
+          className="font-poppins flex mb-16 sm:mb-0 justify-center items-center text-6xl lg:text-3xl md:text-3xl sm:text-3xl"
         >
           What people say about us{" "}
         </motion.div>
       {testimonials.length && (
         <>
-        <div className={`w-[55%] sm:w-[75%] min-h-[320px] mt-16 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
+        <div className={`w-[55%] sm:w-[75%] md:w-[80%]  min-h-[320px] mt-16 sm:mt-8 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
           {test.imgurl && (
           <Image src={`${urlFor(test?.imgurl)}`} 
           width={100}
           height={100}
-          className="rounded-full"
+          className="rounded-full sm:hidden"
           objectFit="cover"
           alt="testimonial" />
           )}
-          <div className="flex flex-col justify-center flex-start flex-1 p-8 h-full">
-            <p className='text-xl lg:text-2xl'>{test.feedback}</p>
+          <div className="flex flex-col justify-center flex-start flex-1 p-8 h-full font-semibold">
+            <p className='text-xl lg:text-2xl sm:text-lg'>{test.feedback}</p>
             <div>
               <h4 className="font-bold mt-5">{test.name}</h4>
             </div>

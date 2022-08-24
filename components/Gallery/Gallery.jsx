@@ -15,10 +15,6 @@ const Gallery = () => {
     setCurrentIndex(index)
   }
 
-  const zoomInOnClick = () => {
-
-  }
-
   const [gallery, setGallery] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const { theme } = useTheme()
@@ -35,28 +31,31 @@ const Gallery = () => {
   const desc = gallery[currentIndex]
 
   return (
-    <div id="gallery" className='flex flex-col items-center justify-center' onClick={() => {}}>
-                   <div>
+    // <div id="gallery" className='flex flex-col items-center justify-center mt'>
+    <div id="gallery" className='mt-10'>
+          {gallery.length &&  (
+            <>
+             <div>
             <motion.div
             whileInView={{ x: [-300, 0] }}
                 transition={{ duration: 0.85, ease: "easeOut" }}
-                className="mb-16 flex justify-center items-center text-6xl sm:text-5xl sm:justify-center sm:items-center">
+                className="font-poppins flex mb-16 sm:mb-4 justify-center items-center text-6xl lg:text-3xl md:text-3xl sm:text-3xl">
                 GALLERY{" "}
             </motion.div>
             </div>
-          {gallery.length &&  (
-                <div className={`w-full min-h-[320px] shadow-xl flex flex-col items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
+                <div className={`w-full min-h-[320px]  shadow-xl flex flex-col items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
                 >
                 <Image src={`${urlFor(desc.imgUrl)}`} alt="haircut"
-                    height={600}
-                    width={600}
+                    height={400}
+                    width={400}
                     className=" shadow-xl rounded-lg"
                     objectFit="cover"
                  />
                  </div>
+            </>
             )}
             
-        <div className="flex flex-row mt-3 rounded-full m-5 sm:mb-5">
+        <div className="flex flex-row items-center justify-center mt-3 rounded-full m-5 sm:mb-5">
           <div 
           className=""
           onClick={() => 
