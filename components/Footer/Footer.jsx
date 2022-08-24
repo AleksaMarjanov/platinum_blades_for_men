@@ -13,7 +13,7 @@ const Footer = () => {
       className="rounded-full"
       alt="logo"
       />
-      <p className="pb-8 font-poppins font-semibold text-lg sm:text-xs">
+      <p className="pb-8 font-poppins font-semibold text-lg sm:text-xs sm:mt-5">
         2112 4th Ave W<br />
         Suite 103 B<br />
         Williston 58801<br />
@@ -28,7 +28,7 @@ const Footer = () => {
 
       </p>
 </div>
-          <div className="flex flexBetween">
+          <div className="flex flexBetween sm:text-xs sm:mt-3">
           <p className="font-poppins xs:font-sm">{new Date().getFullYear()}  @Aleksa All Rights Reserved</p>
           </div>
       </div>

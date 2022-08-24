@@ -5,7 +5,7 @@ import SocialMedia from './../SocialMedia';
 const AppWrap = (Component, idName, classNames) =>
   function HOC() {
     return (
-      <div id={idName} className={`w-full min-h-screen sm:min-h-[50vh] flex flex-row  ${classNames}`}>
+      <div id={idName} className={`w-full min-h-screen sm:min-h-[50vh] md:min-h-[50vh] flex flex-row  ${classNames}`}>
         <SocialMedia />
         <div className="flex-1 w-full flex-col justify-center items-center">
           <Component />
