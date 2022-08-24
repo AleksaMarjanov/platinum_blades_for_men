@@ -11,7 +11,7 @@ const Map = dynamic(() => import("../Map/Map"), {
 const Contact = () => {
   return (
     <>
-      <div id="contact" className="mt-24 sm:mb-16">
+      <div id="contact" className="mt-24 mb-16">
       <motion.div
             whileInView={{ x: [-300, 0] }}
                 transition={{ duration: 0.85, ease: "easeOut" }}
