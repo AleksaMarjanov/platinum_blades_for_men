@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { markers } from "./Marker";
 import mapboxgl from 'mapbox-gl'
 
 const Map = () => {
@@ -16,23 +15,33 @@ const Map = () => {
         zoom: 13
       })
     }, [])
+
     const geojson = {
-      features: markers.map((marker) => ({
-        geometry: {
-          coordinates: {
-            lat: marker.latCoord,
-            lng: marker.longCoord
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [-103.6327, 48.1649]
+          },
+          properties: {
+            title: 'Mapbox',
+            description: 'Platinum Blades Williston'
           }
-        }
-      }))
+        },
+      ]
     };
-    
-      const addToMap = (map) => {
-        const marker = new mapboxgl.Marker().setLngLat(marker.geometry.coordinates).addTo(map);
-      }
+    for ( const feature of geojson.features) {
+      const el = document.createElement('div');
+      el.className = 'marker';
+      
+      new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+    }
+       
   
     return (
-      <div className="h-[50vh] sm:h-[40vh] sm:w-[50%] w-[100%]">
+      <div id="map" className="h-[50vh] sm:h-[40vh] sm:w-[50%] w-[100%]">
       
       </div>
       );

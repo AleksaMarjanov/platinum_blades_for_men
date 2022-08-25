@@ -38,7 +38,7 @@ const About = () => {
           <br /> Williston local shop
           <br /> focused solely on serving the North Dakota market.
         </p>
-        <p className="font-poppins font-thin text-md sm:text-sm mt-5">
+        <p className="font-poppins font-semibold text-md sm:text-sm mt-5">
           Lee has been cutting hair fewer than 10 years. <br />
           We’ve seen it all and can do it all. <br />
           We are about substance and skill, not gimmicks. <br />
