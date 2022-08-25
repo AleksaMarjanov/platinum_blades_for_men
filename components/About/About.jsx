@@ -48,7 +48,7 @@ const About = () => {
           <br /> Sorry pal, you won¹t find that here.
         </p>
       </div>
-      <div className="relative  xl:pl-3 sm:h-[1000px] sm:w-full md:h-[1700px] lg:h-[900px] lg:w-[600px] xl:h-[760px] xl:w-[400px]">
+      <div className="relative  xl:pl-3 sm:h-[1200px] sm:w-full md:h-[1700px] lg:h-[900px] lg:w-[600px] xl:h-[760px] xl:w-[400px]">
         <Image
           src={images.about1}
           alt="hairstyles"

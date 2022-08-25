@@ -29,17 +29,17 @@ const Testimonial = () => {
   const test = testimonials[currentIndex];
   
   return (
-    <div id="testimonials" className="flex pt-32 sm:pt-8  mb-5 justify-center items-center w-full flex-col">
+    <div id="testimonials" className="flex pt-32 sm:pt-8 xs:pt-2 mb-5 justify-center items-center w-full flex-col">
       <motion.div
           whileInView={{ x: [-300, 0] }}
           transition={{ duration: 0.85, ease: "easeOut" }}
-          className="font-poppins flex justify-center items-center mb-16 sm:mb-4  text-6xl lg:text-4xl md:text-3xl sm:text-2xl"
+          className="font-poppins flex justify-center items-center mb-16 sm:mb-4  text-6xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl xs:mb-5"
         >
           What people say about us{" "}
         </motion.div>
       {testimonials.length && (
         <>
-        <div className={`w-[55%] sm:w-[75%] md:w-[80%] min-h-[320px] mt-16 sm:mt-8 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
+        <div className={`w-[55%] sm:w-full md:w-[80%] mt-16 sm:mt-8 xs:mt-2 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
           {test.imgurl && (
           <div className='sm:hidden md:hidden'>
           <Image src={`${urlFor(test?.imgurl)}`} 
