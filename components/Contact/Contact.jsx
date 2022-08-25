@@ -22,7 +22,7 @@ const Contact = () => {
         <h2 className="flex flex-col justify-center items-center font-poppins text-2xl sm:text-md mb-5">
           Gift cards available for in store purchase
         </h2>
-        <div id="map" className="">
+        <div className="h-[50vh] sm:h-[40vh] sm:w-[50%] w-[100%]">
           <Map />
         </div>
       </div>

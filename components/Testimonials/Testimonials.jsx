@@ -39,7 +39,7 @@ const Testimonial = () => {
         </motion.div>
       {testimonials.length && (
         <>
-        <div className={`w-[55%] sm:w-full md:w-[80%] mt-16 sm:mt-8 xs:mt-2 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
+        <div className={`w-[55%] xl:min-h-[320px] sm:w-full md:w-[80%] mt-16 sm:mt-8 xs:mt-2 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
           {test.imgurl && (
           <div className='sm:hidden md:hidden'>
           <Image src={`${urlFor(test?.imgurl)}`} 

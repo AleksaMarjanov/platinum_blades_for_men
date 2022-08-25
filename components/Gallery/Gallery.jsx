@@ -45,7 +45,7 @@ const Gallery = () => {
             </div>
                 <div className={`w-full shadow-xl flex flex-col items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}
                 >
-                <div className='relative  xl:pl-3 sm:h-[270px] sm:w-[270px] md:h-[600px] md:w-[600px] lg:h-[800px] lg:w-[800px] xl:h-[1000px] xl:w-[1000px]'>
+                <div className='relative  xl:pl-3 xs:h-[270px] xs:w-[270px] sm:h-[400px] sm:w-[400px] md:h-[600px] md:w-[600px] lg:h-[800px] lg:w-[800px] xl:h-[1000px] xl:w-[1000px]'>
 
                 <Image src={`${urlFor(desc.imgUrl)}`} alt="haircut"
                     // height={400}
