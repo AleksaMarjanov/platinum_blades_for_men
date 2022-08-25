@@ -32,12 +32,12 @@ const Map = () => {
         },
       ]
     };
-    for ( const feature of geojson.features) {
-      const el = document.createElement('div');
-      el.className = 'marker';
+ //   for ( const feature of geojson.features) {
+ //     const el = document.createElement('div');
+ //      el.className = 'marker';
       
-      new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
-    }
+ //     new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+ //   }
        
   
     return (
