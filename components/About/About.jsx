@@ -48,15 +48,11 @@ const About = () => {
           <br /> Sorry pal, you won¹t find that here.
         </p>
       </div>
-      <div 
-      // whileInView={{ x: [300, 0] }}
-      // transition={{ duration: 1, ease: "easeOut" }}
-      className="flex flex-col justify-end items-end xl:pl-3">
+      <div className="relative  xl:pl-3 sm:h-[1000px] sm:w-full md:h-[1700px] lg:h-[900px] lg:w-[600px] xl:h-[760px] xl:w-[400px]">
         <Image
           src={images.about1}
           alt="hairstyles"
-          width={200}
-          height={800}
+          layout="fill"
           // ** Perfect for sm size (mobile)
           // width={200}
           // height={880} 
