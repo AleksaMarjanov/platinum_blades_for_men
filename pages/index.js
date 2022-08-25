@@ -11,7 +11,7 @@ const Home = () => {
         // text inside the banner
           childStyles="md:text-4xl sm:text-xl xs:text-lg text-left"
         // actual banner style
-          parentStyle="justify-center mb-6 h-72 sm:h-60 p-12 xs:p-4 xs:h-44 rounded-3xl font-poppins"
+          parentStyle="justify-center mb-6 h-72 sm:h-48 p-12 xs:p-4 xs:h-44 rounded-3xl font-poppins"
           
         />
         <Testimonials />

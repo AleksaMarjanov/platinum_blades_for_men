@@ -110,7 +110,7 @@
 }
 
 .marker {
-    background-image: '📌';
+    background-image: 'url(assets\pushpin.png)';
     /* background-image */
     background-size: cover;
     width: 50px;
