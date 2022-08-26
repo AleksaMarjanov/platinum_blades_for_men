@@ -33,7 +33,7 @@ const Testimonial = () => {
       <motion.div
           whileInView={{ x: [-300, 0] }}
           transition={{ duration: 0.85, ease: "easeOut" }}
-          className="font-poppins flex justify-center items-center mb-16 sm:mb-4  text-6xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl xs:mb-5"
+          className="font-poppins flex justify-center items-center mb-16 sm:mb-4  text-6xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-2xl xs:mb-5"
         >
           What people say about us{" "}
         </motion.div>

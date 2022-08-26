@@ -43,10 +43,10 @@ const ServiceCard = () => {
                 <div
                   className={`xl:w-[55%] w-[60%] sm:w-full font-poppins font-bold flex flex-col items-center justify-center p-6 ${theme === 'dark' ? 'text-white' : 'text-black'} hover:text-nft-red-violet  transition duration-300 ease-in`}
                 >
-                  <h1 className="text-2xl font-semibold mb-3 lg:text-md md:text-2xl">
+                  <h1 className="text-2xl font-semibold mb-3 lg:text-md md:text-2xl sm:text-lg">
                     {service.name}
                   </h1>
-                    <p className="leading-relaxed mb-3 lg:text-2xl md:text-xl">
+                    <p className="leading-relaxed mb-3 lg:text-2xl md:text-xl sm:text-sm sm:font-semibold">
                       {service.description}
                     </p>
                 </div>
