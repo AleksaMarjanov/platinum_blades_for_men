@@ -1,10 +1,10 @@
 # Platinum Blades for men
-<a href="https://platinum-blades-will.vercel.app">Live Website</a>
+# <a href="https://platinum-blades-will.vercel.app">Live Website</a>
 
-<img src="https://i.ibb.co/TYgbTxJ/1.png" width="500px" />
-<img src="https://i.ibb.co/59bkC1J/2.png" width="500px" />
-<img src="https://i.ibb.co/XW72CHf/3.png" width="500px" />
-<img src="https://i.ibb.co/GvRHFFs/4.png" width="500px" />
+<img src="https://i.ibb.co/TYgbTxJ/1.png" width="800px" />
+<img src="https://i.ibb.co/59bkC1J/2.png" width="800px" />
+<img src="https://i.ibb.co/XW72CHf/3.png" width="800px" />
+<img src="https://i.ibb.co/GvRHFFs/4.png" width="800px" />
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
