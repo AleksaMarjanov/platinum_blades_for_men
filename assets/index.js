@@ -1,4 +1,4 @@
-import logo from './logo.jpg'
+import logo from './logo1.jpeg'
 import shop from './1.jpg'
 import menu from './menu.png'
 import barbertools from './barbertools.webp'

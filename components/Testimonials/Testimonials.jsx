@@ -39,7 +39,7 @@ const Testimonial = () => {
         </motion.div>
       {testimonials.length && (
         <>
-        <div className={`w-[55%] xl:min-h-[320px] sm:w-full md:w-[80%] mt-16 sm:mt-8 xs:mt-2 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center ${theme === 'dark' ? 'bg-nft-dark' : 'bg-white'}`}>
+        <div className='w-[55%] xl:min-h-[320px] sm:w-full md:w-[80%] mt-16 sm:mt-8 xs:mt-2 shadow-xl flex flex-row p-5 rounded-2xl items-center justify-center '>
           {test.imgurl && (
           <div className='sm:hidden md:hidden'>
           <Image src={`${urlFor(test?.imgurl)}`} 
@@ -68,7 +68,7 @@ const Testimonial = () => {
             : currentIndex - 1
           )}
           >
-            <HiChevronLeft className="w-[40px] h-[40px] dark:bg-slate-500 bg-slate-300 rounded-full mr-3 hover:bg-slate-400  dark:hover:bg-slate-700 cursor-pointer"/>
+            <HiChevronLeft className="w-[40px] h-[40px] bg-slate-300 rounded-full mr-3 hover:bg-slate-400 cursor-pointer"/>
           </div>
           <div
           className=""
@@ -79,7 +79,7 @@ const Testimonial = () => {
             : currentIndex + 1 
           )}
           >
-            <HiChevronRight  className="w-[40px] h-[40px] dark:bg-slate-500 bg-slate-300 rounded-full ml-3 hover:bg-slate-400 dark:hover:bg-slate-700 cursor-pointer"/>
+            <HiChevronRight  className="w-[40px] h-[40px] bg-slate-300 rounded-full ml-3 hover:bg-slate-400 cursor-pointer"/>
           </div>
         </div>
         </>
