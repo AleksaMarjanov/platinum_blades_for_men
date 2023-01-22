@@ -30,7 +30,7 @@ const Footer = () => {
 </div>
           <div className="flex flexBetween sm:text-xs sm:mt-3">
           <p className="font-poppins xs:font-sm">{new Date().getFullYear()}  @Aleksa All Rights Reserved | 
-          <a className="hover:text-nft-gray-2 ease-in transition-all duration-300" href="https://marjanovdesignsoutions.com">Developed by Marjanov Design Solutions</a>
+          <a className="hover:text-nft-gray-2 ease-in transition-all duration-300" href="https://marjanovdesignsolutions.com">Developed by Marjanov Design Solutions</a>
           </p>
           </div>
       </div>
